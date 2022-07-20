@@ -1,0 +1,51 @@
+question revision aws:
+AWS service/feauture and its- scope
+s3-bucket-region|EBS -AZ|Subnet-AZ|AMI-Region
+2:aws trusted advisor provides recommendations for:
+cost optimization
+performance.
+------------------------------------------------
+3:what does fault tolerance refer to :
+the built in redundancy of an applications componenets
+4:which aws cloud benefit eliminates the need for users to try estimating future infrastructure usage:
+Elasticity of the cloud aws
+----------------------------------------------------------------
+5:which actions represents best practices for using AWS IAM:
+ A:configure a strong password policy
+Rotate access keys on a regular basis
+5:a company operating in the aws and requires separate invoices for specific environnments:
+use resource tag.
+-----------------------------------------------
+which service includes no additional cost in aws:
+Amazon EC2 Auto Scaling
+CloudWatch (for scaling policies)
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+The AWS Total cost of ownership (TCO) is used to:
+estimate savings when comparing the aws cloud to an on-premises environment
+----------------------------------------------------
+how to achieve realibility:
+use aws cloudtrail to record api calls into an auditable log in file
+use aws config to generate an inventory of aws resources
+-----------------------------------------------------------------------------
+A security officer IPsec 
+use aws vpn 
+------------------------------------------------------------------
+Which components are required to build a site to site VPN connection on AWS?
+Site-to-Site VPN Components
+Virtual private gateway.
+Transit gateway.
+Customer gateway device.
+Customer gateway.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+which aws service provides the ability to detect inadvertnet data leaks data of personally identifiable information (pii) and user credential data:
+Amazon macie
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+when we need a servless solution we use:
+API GATEWAY
+Lambda 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+when we need a storage support versioning we use:
+Amazon s3
+---------------------------------------------------------------------------------------------------------------------------------------------
+how can a company separate costs for network traffic ,amazon ec2,amazon s3:
+Add department-specific tags to each resource .

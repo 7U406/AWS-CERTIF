@@ -1,0 +1,39 @@
+SELECT name from Person
+WHERE salary >= (SELECT  max(salary) from Person  )
+group by gende
+SELECT name
+FROM Person
+WHERE salary >= ALL
+  (SELECT salary
+  FROM Person);
+SELECT name, salary, salary * 10000 / t.s AS `percent of total`
+FROM Person
+
+CROSS JOIN (SELECT SUM(salary) AS s FROM Person) t  
+
+
+CREATE TABLE test
+(
+    id INT PRIMARY KEY NOT NULL,
+    nom VARCHAR(100),
+    prenom VARCHAR(100),
+    email VARCHAR(255),
+    date_naissance DATE,
+    pays VARCHAR(255),
+    ville VARCHAR(255),
+    code_postal VARCHAR(5),
+    nombre_achat INT
+)
+select * from Person
+CROSS JOIN
+(SELECT AVG(salary)  from Person 
+ where gender is "Male" )  where gender is "Female"
+select * from test 
+CROSS JOIN(
+select COUNT(*) AS ct from test 
+where  date_naissance between "04-01-1997" AND "04-06-1997" )  where  date_naissance between "04-01-1997" AND "04-17-1997"
+
+
+calculer maximum salary for each department
+select distinct(DEPT_ID),SALARY from Department d1
+where SALARY in(select max(SALARY) from Department d2 where d1. DEPT_ID==d2. DEPT_ID)

@@ -1,0 +1,104 @@
+REVISION AWS:
+price in aws:
+Pricing models for Amazon EC2:
+There are four ways to pay for Amazon EC2 instances: On-Demand Instances, Savings Plans, Reserved
+Instances, and Spot Instances.
+On-Demand Instances
+With On-Demand Instances, you pay for compute capacity per hour or per second, depending on which
+instances you run. No long-term commitments or upfront payments are required.
+Savings Plans:
+Savings Plans are a flexible pricing model that offer low prices on Amazon EC2, AWS Lambda, and AWS
+Fargate usage, in exchange for a commitment to a consistent amount of usage (measured in $/hour) for
+a 1 or 3 year term.
+Spot Instances
+Amazon EC2 Spot Instances allow you to request spare Amazon EC2 computing capacity for up to 90
+percent off the On-Demand price. Spot Instances are recommended for:
+• Applications that have flexible start and end times
+• Applications that are only feasible at very low compute prices
+• Users with fault-tolerant and/or stateless workloads
+Reserved Instances
+Amazon EC2 Reserved Instances provide you with a significant discount (up to 75 percent) compared to
+On-Demand Instance pricing.
+Data transfer in to Amazon S3 is free. Data transfer out of Amazon S3 is priced by Region. For more
+information on AWS Snowball pricing, see the AWS Snowball pricing page.
+---------------------------------------------------------------------------------------------------------
+AWS Lambda pricing
+With AWS Lambda, you pay only for what you use. You are charged based on the number of requests
+for your functions and the time it takes for your code to execute.
+Request pricing
+• Free Tier: 1 million requests per month, 400,000 GB-seconds of compute time per month
+• $0.20 per 1 million requests thereafter, or $0.0000002 per request
+-----------------------------------------------------------------------------------------------
+Amazon Elastic Block Store (Amazon EBS)
+Amazon Elastic Block Store (Amazon EBS) an easy to use, high performance block storage service
+designed for use with Amazon EC2 instances.
+SSD-backed volumes are optimized for transactional workloads involving frequent read/write
+operations with small I/O size, where the dominant performance attribute is IOPS.
+• HDD-backed volumes are optimized for large streaming workloads where throughput (measured in
+megabits per second) is a better performance measure than IOPS.
+------------------------------------------------------------------------------------------------------
+Amazon Simple Storage Service (Amazon S3)
+Amazon Simple Storage Service (Amazon S3) is object storage built to store and retrieve any amount of
+data from anywhere: websites, mobile apps, corporate applications, and data from IoT sensors or devices.
+Classe  in s3 bucket:
+1) S3 Standard for general-purpose storage of frequently accessed data.
+2)S3 Intelligent-Tiering for data with unknown or changing access patterns.
+3)S3 Standard-Infrequent Access (S3 StandardIA)
+4)S3 One Zone-Infrequent Access (S3 One Zone-IA) for long-lived, but less frequently accessed data.
+5)Amazon S3 Glacier (S3 Glacier)
+6)Amazon S3 Glacier Deep Archive (S3 Glacier Deep Archive) for long-term archive and digital preservation
+
+Amazon S3 Glacier
+Amazon S3 Glacier is a secure, durable, and extremely low-cost cloud storage service for data
+archiving and long-term backup. It is designed to deliver 99.999999999 percent durability.
+1:S3 Intelligent-Tiering for data with unknown or changing access patterns:
+est le premier système de stockage dans le cloud qui réduit automatiquement vos coûts de stockage au niveau des objets en déplaçant automatiquement les données vers le niveau d'accès le plus rentable en fonction de la fréquence d'accès, sans impact sur les performances.
+2:S3 Standard-Infrequent Access (S3 StandardIA):is for data  infequent access but requires rapid access when we need it.
+3:s3 one zone-infrequent access:S3 One Zone-IA est idéal pour les données consultées peu fréquemment, 
+mais nécessitant un accès rapide le cas échéant. Contrairement à d'autres Classes de stockage S3, 
+qui stockent des données au minimum dans trois zones de disponibilités (AZ), 
+S3 One Zone-IA stocke des données dans une seule AZ et coûte 20% de moins que le S3 Standard-IA. S3 One Zone-IA est idéal pour les clients
+qui souhaitent disposer d'une option à moindre coût pour les données auxquelles ils accèdent moins souvent.
+
+s3 glacier:c'est un classe  pour l'archivage  des données a long terme.
+Amazon S3 Glacier Deep Archive:S3 Glacier Deep Archive est la classe de stockage la plus économique d'Amazon S3, et prend en charge la rétention à long terme et la préservation numérique pour les données qui peuvent éventuellement être consultées une ou deux fois par an.
+--------------------------------------------------------------------------------------------
+AWS Snow Family:
+AWS Snowcone:
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+Amazon CloudFront:
+
+Amazon CloudFront is a web service that speeds up distribution of your static and dynamic web content, such as .html, .css, .js, and image files, to your users. 
+CloudFront delivers your content through a worldwide network of data centers called edge locations.
+--------------------------------------------------------------------------------------------------------------------------
+Amazon elasticcache:
+Amazon ElastiCache est un services entièrement géré de mise en cache en mémoire qui prend en charge des cas d'utilisation flexibles et en temps réel.
+ Vous pouvez utiliser ElastiCache pour la mise ne cache, ce qui accélère les performances des applications et des bases de données, ou comme stockage de données principal pour des cas d'utilisation qui n'ont pas besoin de la durabilité, comme le stockage de sessions, les tableaux de score des jeux, le streaming et l'analytique.
+ ElastiCache est compatible avec Redis et Memcached. 
+---------------------------------------------------------------------------------------------------------------------------------
+Amazon cloud formation:
+AWS CloudFormation is a service that helps you model and set up your AWS resources so that you can spend less time managing those resources and more time focusing on your applications that run in AWS.
+---------------------------------------------------------------------------------------------------------------
+Amazon global accelerator:
+AWS Global Accelerator est un service réseaux qui vous permet d'obtenir jusqu'à 60 % de performances du trafic des utilisateurs en plus à travers l'infrastructure réseau mondiale d'Amazon Web Services.
+ Lorsque Internet est encombré, AWS Global Accelerator optimise le chemin vers votre application pour maintenir vos pertes de paquets, votre instabilité et votre latence à un niveau constamment bas.
+--------------------------------------------------------------------------------------------------
+Amazon load balancer:
+
+C'est pour gerer le traffic et distribuer les requetes en equivalence entre les instances.
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+AWS Elastic Beanstalk Documentation
+With AWS Elastic Beanstalk, you can quickly deploy and manage applications in the AWS Cloud without worrying about the infrastructure that runs those applications. 
+AWS Elastic Beanstalk reduces management complexity without restricting choice or control.
+ You simply upload your application, and AWS Elastic Beanstalk automatically handles the details of capacity provisioning, load balancing, scaling, and application health monitoring.
+------------------------------------------------------------------------------------------------------------------------------------------------
+Cloud trail:
+
+

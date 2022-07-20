@@ -1,0 +1,6 @@
+select id from Department d where id in (
+select * from Employee
+where departmentId =1
+order by salary DESC
+limit 4
+    )
